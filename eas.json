@@ -1,0 +1,46 @@
+{
+    "cli": {
+      "version": ">= 2.8.0"
+    },
+    "build": {
+      "development": {
+        "android": {
+          "buildType": "apk"
+        },
+        "ios": {
+            "resourceClass": "m-medium"
+          },
+        "developmentClient": true,
+        "distribution": "internal",
+        "channel": "development"
+      },
+      "preview": {
+        "android": {
+          "buildType": "apk"
+        },
+        "ios": {
+            "resourceClass": "m-medium"
+          },
+        "distribution": "internal",
+        "channel": "preview",
+        "env": {
+      
+        }
+      },
+      "production": {
+        "channel": "production",
+        "android": {
+          "buildType": "apk"
+        },
+        "ios": {
+            "resourceClass": "m-medium"
+          },
+        "env": {
+          "REACT_NATIVE_BUNDLE_NAME": "com.c2s.c2s"
+        }
+      }
+    },
+    "submit": {
+      "production": {}
+    }
+}
